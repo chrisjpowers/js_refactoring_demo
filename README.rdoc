@@ -1,0 +1,62 @@
+= Javascript Refactoring Demo
+
+== What is this?
+
+This super-simple application is a demo that accompanies my 
+<em>7 Steps to Better Javascript</em> talk. The intent is to
+walk you step-by-step through 7 Javascript refactorings in 
+order to update your <tt>chat.js</tt> from 
+<tt>0_original.js</tt> to <tt>7_reuse_with_setup_params.js</tt>.
+
+During my talk I will be explaining how to approach each
+refactoring and what its benefits are. The same information is
+provided in comments at the top of each refactored javascript
+file.
+
+Please note that I used my Web Sockets demo as a starting point
+(http://github.com/chrisjpowers/web_sockets_demo), so the
+Pusher library is an integral part of this demo as well.
+
+== How do I get started?
+
+I'm working with the understanding that you have your favorite flavor
+of Ruby installed and working. Assuming that's true...
+
+Clone this repository:
+
+  $ git clone git://github.com/chrisjpowers/web_sockets_demo.git
+  $ cd web_sockets_demo
+
+Make sure Rubygems is up to date and you have Bundler installed:
+
+  $ gem update --system
+  $ gem install bundler
+
+Install dependencies with Bundler:
+
+  $ bundle install
+
+Start the server:
+
+  $ ruby server.rb
+
+Check out the demo at http://localhost:4567
+
+== That worked, now what?
+
+Start refactoring! I've laid out seven steps to help get you
+moving in the right direction, but it's up to you to decide
+the best techniques to use. I guarantee that developers will
+think that I've refactored too much, and others will say
+that I haven't done enough -- so what do you think?
+
+== Um, a little help?
+
+Just in case you're not familiar with one of these libraries, 
+here are some docs:
+
+* Pusher: http://pusherapp.com/docs
+* Sinatra: http://www.sinatrarb.com
+* HAML: http://haml-lang.com/docs.html
+* jQuery: http://docs.jquery.com
+* Bundler: http://gembundler.com
