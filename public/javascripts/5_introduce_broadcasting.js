@@ -14,7 +14,9 @@
 //    object from the code without having *any* negative impact on the 
 //    other objects. That's the beauty of loosely coupled objects!
 
-$(function() {
+$(document).ready(setup_app);
+
+function setup_app() {
   // setup Pusher
   MyPusher.setup();
   
@@ -25,7 +27,7 @@ $(function() {
   
   // setup new message form for AJAX
   NewMessageForm.setup();
-});
+}
 
 function sanitize(str) {
   return str.replace(/</ig, '&lt;').replace(/>/ig, '&gt;');
@@ -95,11 +97,11 @@ var NewMessageForm = {
   on_form_submit: function(event) {
     // validate name field
     if(!NewMessageForm.has_valid_name()) {
-      alert('Please enter your name.');
+      NewMessageForm.display_error('Please enter your name.');
     }
     // validate body field
     else if(!NewMessageForm.has_valid_body()) {
-      alert('Please enter a message.');
+      NewMessageForm.display_error('Please enter a message.');
     }
     else {
       // Disable form while submitting
@@ -122,5 +124,9 @@ var NewMessageForm = {
   
   enable_form: function() {
     $('#submit_button').attr('disabled', false).text('Submit');
+  },
+  
+  display_error: function(msg) {
+    alert(msg);
   }
 };

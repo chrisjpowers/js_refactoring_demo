@@ -10,7 +10,9 @@
 // 3. Again, using meaningful function names like on_form_submit make
 //    the code much more legible.
 
-$(function() {
+$(document).ready(setup_app);
+
+function setup_app() {
   // setup Pusher
   MyPusher.setup();
   
@@ -19,7 +21,7 @@ $(function() {
   
   // setup new message form for AJAX
   NewMessageForm.setup();
-});
+}
 
 function sanitize(str) {
   return str.replace(/</ig, '&lt;').replace(/>/ig, '&gt;');

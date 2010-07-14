@@ -9,7 +9,7 @@
 // 3. By using meaningful function names like setup() and display(),
 //    it's much easier to understand what happens when this app is fired up.
 
-$(function() {
+$(document).ready(function() {
   // setup Pusher
   MyPusher.setup();
   

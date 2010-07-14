@@ -24,8 +24,8 @@ of Ruby installed and working. Assuming that's true...
 
 Clone this repository:
 
-  $ git clone git://github.com/chrisjpowers/web_sockets_demo.git
-  $ cd web_sockets_demo
+  $ git clone git://github.com/chrisjpowers/js_refactoring_demo.git
+  $ cd js_refactoring_demo
 
 Make sure Rubygems is up to date and you have Bundler installed:
 
@@ -36,11 +36,17 @@ Install dependencies with Bundler:
 
   $ bundle install
 
-Start the server:
+Start the app server:
 
   $ ruby server.rb
 
 Check out the demo at http://localhost:4567
+
+Start the test server:
+
+  $ rake jasmine
+
+Run the test suite by browsing to http://localhost:8888
 
 == That worked, now what?
 
@@ -60,3 +66,4 @@ here are some docs:
 * HAML: http://haml-lang.com/docs.html
 * jQuery: http://docs.jquery.com
 * Bundler: http://gembundler.com
+* Jasmine: http://github.com/pivotal/jasmine

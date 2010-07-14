@@ -24,7 +24,7 @@
 // 6. DRY Up Constant Values
 // 7. Reuse Objects with Extensible Setup Params
 
-$(function() {
+$(document).ready(function() {
   // setup Pusher
   WebSocket.__swfLocation = "/javascripts/support/WebSocketMain.swf";
   var pusher = new Pusher('2f26b8b3ea8bbda5ec02', 'refactor_demo');
