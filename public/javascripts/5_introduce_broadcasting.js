@@ -1,4 +1,4 @@
-// REFACTORING #5: Introduce Broadcasting
+// REFACTORING #5: Introduce Event Broadcasting
 //
 // IMPROVEMENTS
 // 1. By using jQuery custom event broadcasting rather than having

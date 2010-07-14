@@ -1,6 +1,28 @@
 // This is the original code -- it works, but making changes
 // and additions would be a serious pain in the neck.
 // Time to start refactoring...
+//
+// PROBLEMS
+// 1. The code lacks legibility -- a reader would probably be
+//    lost if it weren't for the code comments.
+// 2. Because all of the code is wrapped up in anonymous functions,
+//    these functions cannot be unit tested.
+// 3. Logic for different display items is scattered throughout,
+//    which makes it difficult to update the code.
+// 4. While it would certainly be possible to add features and
+//    make changes to this codebase, each change would bring
+//    additional confusion and code-debt. The goal of refactoring
+//    is to bring clarity to the code so that future changes can
+//    bring further clarity.
+//
+// REFACTORING STEPS
+// 1. Modularize and Namespace Chunks of Logic
+// 2. Extract Anonymous Callbacks into Named Functions
+// 3. Extract Inline Business Logic into Individual Functions
+// 4. Move Logic to the Proper Object
+// 5. Introduce Event Broadcasting
+// 6. DRY Up Constant Values
+// 7. Reuse Objects with Extensible Setup Params
 
 $(function() {
   // setup Pusher

@@ -1,4 +1,4 @@
-// REFACTORING #7: Reuse with Setup Params
+// REFACTORING #7: Reuse Objects with Extensible Setup Params
 //
 // IMPROVEMENTS
 // 1. The internal constant values of all these objects can now
